@@ -1,0 +1,50 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"image": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json",
+		"prezi": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"oa": "http://www.w3.org/ns/oa#",
+
+    	"Collection": "prezi:Collection",
+    	"Manifest": "prezi:Manifest",
+    	"Canvas": "prezi:Canvas",
+    	"Range": "prezi:Range",
+
+	    "AnnotationCollection": {
+	      "@id": "as:OrderedCollection",
+	      "@context": "http://www.w3.org/ns/anno.jsonld"
+	    },
+	    "AnnotationPage": {
+	      "@id": "as:OrderedCollectionPage",
+	      "@context": "http://www.w3.org/ns/anno.jsonld"
+	    },
+	    "Annotation": {
+	      "@id": "oa:Annotation",
+	      "@context": "http://www.w3.org/ns/anno.jsonld"
+	    },    	
+
+	    "ImageService3": {
+	      "@id": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/ImageService",
+	      "@context": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json"
+    	},
+
+	    "id": "@id",
+	    "type": "@type",
+	    "label": {
+	      "@id": "rdfs:label",
+	      "@container": ["@language", "@set"]
+	    },
+	    "service": {
+	      "@type": "@id",
+	      "@id": "svcs:has_service",
+	      "@container": "@set"
+	    },
+	    "items": {
+	    	"@type": "@id",
+	    	"@id": "as:orderedItems",
+	    	"@container": "@list"
+	    }
+
+	}
+}

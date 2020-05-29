@@ -1,0 +1,14 @@
+{
+	"@context": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json",
+	"id": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/info.json",
+	"type": "ImageService3",
+	"height": 1000,
+	"width": 1200,
+	"partOf": [
+		{
+			"id": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/manifest.json",
+			"type": "Manifest",
+			"label": {"en": ["Manifest"]}
+		}
+	]
+}

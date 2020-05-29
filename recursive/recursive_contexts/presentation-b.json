@@ -1,0 +1,45 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"image": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json",
+		"prezi": "/home/anshul/Documents/assignment/sweb_project_pyld/recursive/recursive_contexts/context.json",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"oa": "http://www.w3.org/ns/oa#",
+
+    	"Collection": "prezi:Collection",
+    	"Manifest": "prezi:Manifest",
+    	"Canvas": "prezi:Canvas",
+    	"Range": "prezi:Range",
+
+	    "AnnotationCollection": {
+	      "@id": "as:OrderedCollection"
+	    },
+	    "AnnotationPage": {
+	      "@id": "as:OrderedCollectionPage"
+	    },
+	    "Annotation": {
+	      "@id": "oa:Annotation"
+	    },    	
+
+	    "ImageService3": {
+	      "@id": "http://iiif.io/api/image/3/ImageService"
+    	},
+
+	    "id": "@id",
+	    "type": "@type",
+	    "label": {
+	      "@id": "rdfs:label",
+	      "@container": "@language"
+	    },
+	    "service": {
+	      "@type": "@id",
+	      "@id": "svcs:has_service",
+	      "@container": "@set"
+	    },
+	    "items": {
+	    	"@type": "@id",
+	    	"@id": "as:orderedItems",
+	    	"@container": "@list"
+	    }
+	}
+}
